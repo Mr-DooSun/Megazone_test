@@ -17,3 +17,11 @@ http://localhost:3000/instance_status
 ```
 tsc server.ts
 ```
+
+### 빌드된 js 파일 실행 해보기
+```
+node server.js
+```
+
+### 결과 확인
+http://localhost:3000/instance_status
