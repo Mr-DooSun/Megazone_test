@@ -1,9 +1,16 @@
 import * as express from 'express';
+import * as cors from 'cors';
 var app = express();
+
+app.use(cors({
+  origin : true,
+  credentials: true
+}));
 
 // Load the AWS SDK for Node.js
 import * as AWS from 'aws-sdk';
 import { DescribeInstancesResult } from 'aws-sdk/clients/ec2';
+
 
 // Set the region
 AWS.config.update({ region: "ap-northeast-2" });
