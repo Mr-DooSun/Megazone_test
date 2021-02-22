@@ -1,7 +1,12 @@
 "use strict";
 exports.__esModule = true;
 var express = require("express");
+var cors = require("cors");
 var app = express();
+app.use(cors({
+    origin: true,
+    credentials: true
+}));
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
